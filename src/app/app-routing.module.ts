@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'inicio',
+    path: '',
     loadChildren: () =>
     import('./pages/inicio/inicio.module').then((m) => m.InicioModule),
+    pathMatch: 'full'
   },
 ];
 
