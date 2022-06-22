@@ -6,6 +6,7 @@ import { BloqueTresComponent } from './bloque-tres/bloque-tres.component';
 import { BloqueComentariosComponent } from './bloque-comentarios/bloque-comentarios.component';
 import { BloqueContactoComponent } from './bloque-contacto/bloque-contacto.component';
 import { MatIconModule } from '@angular/material/icon';
+import { AlwaysReadyComponent } from './always-ready/always-ready.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
     BloqueDosComponent,
     BloqueTresComponent,
     BloqueComentariosComponent,
-    BloqueContactoComponent
+    BloqueContactoComponent,
+    AlwaysReadyComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon';
     BloqueDosComponent,
     BloqueTresComponent,
     BloqueComentariosComponent,
-    BloqueContactoComponent
+    BloqueContactoComponent,
+    AlwaysReadyComponent
   ]
 })
 export class FeaturesModule { }

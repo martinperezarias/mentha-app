@@ -1,13 +1,40 @@
 nav
   position: absolute
+  z-index: 1000
   width: 100%
   height: 74px
-  background: #93939345
+  background: #dbdbdb4d
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+  padding: 0
   .navbar-brand
     img
       height: 50px
-  .nav-item
+  .navbar-nav
+    width: 60%
+    .nav-item
+      font-size: 17px
+      cursor: pointer
+      a
+        color: #fff
+        font-weight: 500
+        transition: all .2s ease-in
+        &:hover
+          color: #242424
+          
+footer
+  height: 180px
+  background-color: #333333
+  .brand-name
+    color: #fff
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 16px
+  .logo-img
+    width: 125px
+  .contact-data
+    width: 180px
+    color: #fff
     cursor: pointer
-    a
-      color: #fff
+    .mail
+      color: #468ac9
+    p
+      text-align: right
