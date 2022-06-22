@@ -26,6 +26,7 @@
     "node-sass": "^7.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
+    "vercel": "^25.1.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
