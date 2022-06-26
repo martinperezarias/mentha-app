@@ -14,10 +14,13 @@
   right: 50px
   height: 190px
   transform: rotate(90deg)
+
+.sub-titles
+  font-size: 18px
   
 .component-title
   font-family: 'Josefin Sans', sans-serif
-  font-size: 50px
+  font-size: 54px
   font-weight: bold
 
 .card-style
@@ -29,19 +32,41 @@
   cursor: default
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px
   transition: all .2s ease-in-out
-.card-style:hover
-  transform: translateY(-10px)
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
-.mat-icon
-  height: 90px
-  width: 90px
-  justify-content: center
-  align-items: center
-  display: flex
-  font-size: 64px
-  background: linear-gradient(#8f1beb, #00b9ff)
-  border-radius: 50%
-.card-title
-  font-family: 'Josefin Sans', sans-serif
-  font-size: 28px
-  font-weight: bold
+  .mat-icon
+    height: 90px
+    width: 90px
+    justify-content: center
+    align-items: center
+    display: flex
+    font-size: 64px
+    border-radius: 50%
+    background: linear-gradient(#8f1beb, #00b9ff)
+  .card-title
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 32px
+    font-weight: bold
+  &:hover
+    transform: translateY(-10px)
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
+
+@media screen and ( max-width: 768px )
+  .left-leaf, .rigth-leaf
+    top: -140px
+  .left-leaf
+    height: 150px
+    left: 30px
+  .rigth-leaf
+    height: 145px
+    right: 50px
+
+@media screen and ( max-width: 425px )
+  .card-style
+    padding: .75rem
+    width: 180px
+    height: 180px
+    .card-title
+      font-size: 22px
+    .mat-icon
+      height: 70px
+      width: 70px
+      font-size: 52px

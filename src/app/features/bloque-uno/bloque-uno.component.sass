@@ -2,16 +2,15 @@
   background-image: url("../../../assets/images/homepage-min.jpg")
   background-position: 50% 80%
   background-color: #cccccc
-  background-size: 100%
+  background-size: cover
   background-attachment: fixed
   padding-top: 74px
-  height: 125%
 
 .bg-opacity
-  height: 125%
   background-color: #17171760
 
 .brand-name, .brand-slogan
+  text-align: center
   color: #fff
 
 .brand-logo
@@ -26,16 +25,32 @@
   font-size: 50px
   font-weight: bold
 
-.button
-  border-radius: 50px
-  padding: 8px 32px
-  font-weight: bold
-  letter-spacing: 1.5px
-  border: 2px solid #ffffff
-  background-color: #ffffff50
-  color: #ffffff
-  transition: all .2s ease-out
+.button-container
+  margin-bottom: 32px
+  .button
+    margin: 0 20px
+    border-radius: 50px
+    padding: 8px 32px
+    font-weight: bold
+    height: 44px
+    letter-spacing: 1.5px
+    border: 2px solid #ffffff
+    background-color: #ffffff50
+    color: #ffffff
+    transition: all .2s ease-out
+    &:hover
+      border: 2px solid #8f1beb
+      background-color: #8f1beb50
 
-.button:hover
-  border: 2px solid #8f1beb
-  background-color: #8f1beb50
+@media screen and ( max-width: 768px )
+  .button-container
+    width: 100%
+    flex-direction: column
+    align-items: center
+    .button
+      width: 90%
+      margin: 20px 0
+
+@media screen and ( max-width: 425px )
+  .brand-logo
+    height: 315px

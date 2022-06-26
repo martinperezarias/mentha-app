@@ -1,7 +1,7 @@
 <div class="section-container d-flex flex-column ">
-  <div class="title-container w-100 d-flex justify-content-center">
-    <div class="w-50">
-      <p class="h3 my-5 text-center w-100">
+  <div class="title-container w-100 d-flex justify-content-center align-items-center">
+    <div class="title-width">
+      <p class="h3 my-5 text-center">
         Un nuevo concepto de REINVENCIÓN
       </p>
     </div>
@@ -9,11 +9,14 @@
   
   <div class="image-container"></div>
   
-  <div class="d-flex flex-wrap justify-content-center align-content-center container card-container">
-    <div class="card-style p-4 m-2 d-flex flex-column justify-content-center align-items-center text-center" 
-      *ngFor="let card of cardContent">
-      <p class="m-0 card-title">{{card.title}}</p>
-      <p class="m-0 card-body">{{card.body}}</p>
+  <div class="container container">
+    <div class="d-flex flex-wrap justify-content-center align-content-center card-container">
+      <div class="card-style m-2 d-flex flex-column justify-content-center align-items-center text-center" 
+        *ngFor="let card of cardContent">
+        <mat-icon class="mb-1">{{card.icon}}</mat-icon>
+        <p class="m-0 card-title">{{card.title}}</p>
+        <p class="m-0 card-body-text">{{card.body}}</p>
+      </div>
     </div>
   </div>
 </div>

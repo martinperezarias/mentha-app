@@ -1,23 +1,25 @@
 .container-background 
   position: relative
-  height: 90%
 
 .upper-background 
   background-color: #f0f3f6
-  height: 50%
+  height: 300px
 
 .lower-background 
-  height: 50%
+  height: 300px
   bottom: 0
   background-color: #8f1beb
 
-.contact-container 
+.contact-container
+  padding: 3rem
   position: absolute
-  width: 60%
-  height: auto
+  left:0
+  right:0
+  bottom: 22%
+  margin: 0 auto
+  max-width: 900px
   background-color: #fff
   border-radius: 30px
-  margin: 8% 20%
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
 
 .contact-title 
@@ -26,13 +28,13 @@
 
 .comment-container 
   width: 40%
-  font-size: 16px
+  font-size: 20px
   color: #00000080
   line-height: 28px
 
 .comment-text 
   font-family: 'Lato', sans-serif
-  width: 80%
+  width: 90%
   font-weight: 300
 
 .input-container 
@@ -67,6 +69,49 @@ label
   border-radius: 10px
   font-weight: 500
   transition: all .3s ease
+  &:hover
+    background-color: #8f1beb
 
-.button-contact:hover
-  background-color: #8f1beb
+.button-direct-contact
+  background-color: #fff
+  border: none
+  color: #8f1beb
+  height: 50px
+  padding: 8px 16px 8px 0
+  border-radius: 20px
+  font-weight: bolder
+  font-size: 20px
+  transition: all .3s ease
+  &:hover
+    color: #fff
+    background-color: #0099ff
+
+@media screen and ( max-width: 768px )
+  .upper-background 
+    height: 400px
+  .lower-background 
+    height: 400px
+  .contact-container
+    margin: 18px
+    padding: 1.5rem
+    .comment-container, .input-container
+      width: 100%
+      margin-bottom: 1rem
+    div
+      flex-direction: column
+    .flex-input
+      width: 100%
+      &:first-child
+        margin-bottom: 1rem
+  .comment-text 
+    width: 100%
+    font-size: 18px
+    text-align: center
+
+@media screen and ( max-width: 425px )
+  .upper-background 
+    height: 450px
+  .lower-background 
+    height: 450px
+  .contact-container
+    bottom: 15%

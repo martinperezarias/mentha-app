@@ -1,37 +1,42 @@
 <div class="container-background">
-  <div class="contact-container p-5">
-    <p class="h4 contact-title text-center">
+  <div class="contact-container">
+    <p class="h4 m-0 contact-title text-center">
       Solicita una reunión inicial personalizada
     </p>
       <div class="d-flex align-items-center justify-content-between mt-4">
-        <div class="comment-container d-flex justify-content-center mb-3">
-          <p class="comment-text">
+        <div class="comment-container d-flex justify-content-center">
+          <p class="m-0 comment-text">
             Nuestros especialistas se pondrán en contacto SIN CARGO para coordinar una reunión inicial totalmente gratis. Estaremos felices de poder co-crear contigo!
           </p>
         </div>
         <div class="input-container">
           <div class="w-100">
             <form>
-              <div class="w-100">
-                <label>Nombre</label>
-                <input class="my-1 w-100 input-contact" type="text" placeholder="Introduzca su nombre"/>
-              </div>
-              <div class="d-flex justify-content-between mt-2">
+              <div class="d-flex justify-content-between mb-3">
+                <div class="flex-input">
+                  <label>Nombre</label>
+                  <input class="input-contact" type="text" placeholder="Introduzca su nombre - compañia"/>
+                </div>
                 <div class="flex-input">
                   <label>Número de contacto</label>
                   <input class="input-contact" type="text" placeholder="+12 345 678 910"/>
                 </div>
-                <div class="flex-input">
-                  <label>Correo</label>
-                  <input class="input-contact" type="text" placeholder="Introduzca su correo"/>
-                </div>
+              </div>
+              <div class="w-100">
+                <label>Correo</label>
+                <input class="my-1 w-100 input-contact" type="text" placeholder="Introduzca su correo"/>
               </div>
             </form>
           </div>
           <button class="button-contact mt-4 w-100">SOLICITAR CONTACTO</button>
         </div>
+      </div>
     </div>
-  </div>
-  <div class="upper-background"></div>
-  <div class="lower-background"></div>
+    <div class="upper-background"></div>
+    <div class="lower-background d-flex justify-content-center align-items-end">
+      <button class="button-direct-contact d-flex align-items-center justify-content-around mb-5">
+        <mat-icon class="mx-3">phone</mat-icon>
+        CONTACTO DIRECTO
+      </button>
+    </div>
 </div>

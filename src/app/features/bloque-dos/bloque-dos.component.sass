@@ -1,13 +1,15 @@
 .section-container
-  height: 100%
   background: #f0f3f6
+  position: relative
 
 .title-container
+  z-index: 999
+  min-height: 210px 
   div
     max-width: 570px
     p
       font-family: 'Lora', sans-serif
-      font-size: 42px
+      font-size: 48px
       font-weight: bold
   
 .image-container
@@ -18,25 +20,53 @@
   background-repeat: no-repeat
   background-size: cover
 
-.card-container
-  position: relative
-  bottom: 115px
-  .card-style
-    width: 250px
-    height: 250px
-    border-radius: 15px
-    background: linear-gradient(#8f1beb, #54fedf)
-    color: #fff
-    cursor: default
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px
-    transition: all .2s ease-in-out
-  .card-style:hover
-    transform: translateY(-10px)
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
-  .card-title, .card-body
-    font-family: 'Lato', sans-serif
-    font-weight: bold
-  .card-title
-    font-size: 24px
-  .card-body
-    font-size: 48px
+.container
+  z-index: 999
+  min-height: 180px
+  .card-container
+    position: relative
+    bottom: 150px
+    .card-style
+      padding: 1.5rem
+      width: 250px
+      height: 250px
+      border-radius: 15px
+      background: linear-gradient(#8f1beb, #54fedf)
+      color: #fff
+      cursor: default
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px
+      transition: all .2s ease-in-out
+      .card-title, .card-body-text
+        font-family: 'Lato', sans-serif
+        font-weight: bold
+      .card-title
+        font-size: 24px
+      .card-body-text
+        font-size: 48px
+      .mat-icon
+        height: 90px
+        width: 90px
+        font-size: 64px
+      &:hover
+        transform: translateY(-10px)
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
+
+@media screen and ( max-width: 678px )
+  .title-container
+    div
+      p
+        font-size: 36px
+
+@media screen and ( max-width: 425px )
+  .container
+    .card-container
+      .card-style
+        padding: .75rem
+        width: 180px
+        height: 180px
+        .card-body-text
+          font-size: 32px
+        .mat-icon
+          height: 60px
+          width: 60px
+          font-size: 42px
