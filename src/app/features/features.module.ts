@@ -19,7 +19,7 @@ import { AlwaysReadyComponent } from './always-ready/always-ready.component';
   ],
   imports: [
     CommonModule,
-    MatIconModule
+    MatIconModule,
   ],
   exports: [
     BloqueUnoComponent,
